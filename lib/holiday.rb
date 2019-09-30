@@ -88,7 +88,8 @@ def all_holidays_with_bbq(holiday_hash)
     holiday_hash.each do |holiday, item|
       if item.include?("BBQ")
         holidays << holiday
-        return holidays
+        return holidays.keys
       end
     end
+  end
 end
